@@ -27,5 +27,5 @@ variable "instances" {
   }
 }
 output "ip" {
-    value = aws_instance.instance["catalogue"].public_ip
+    value = [for k, v in var.aws_instance.instance : v.public_ip ]
 }
