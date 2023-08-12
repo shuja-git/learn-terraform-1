@@ -27,5 +27,5 @@ variable "instances" {
   }
 }
 output "ip" {
-    value = aws_instance.instance
+    value = aws_instance.instance["catalouge"].public_ip
 }
