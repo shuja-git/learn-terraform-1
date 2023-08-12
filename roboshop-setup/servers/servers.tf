@@ -18,7 +18,7 @@ variable "instances" {
   default = {
     catalogue = {
         name = "catalogue"
-        type = "t3.micro"
+        type = "t2.micro"
     },
     user = {
         name = "user"
