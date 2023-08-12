@@ -1,9 +1,9 @@
 resource "null_resource" "nothing" {
-  for_each = var.d1
+  for_each = var.d2
   name = each.value["name"]
   type = each.value["type"]
 }
-variable "d1" {
+variable "d2" {
   default = {
     catalogue = {
         name = "catalogue"
