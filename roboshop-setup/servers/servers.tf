@@ -26,3 +26,6 @@ variable "instances" {
     }
   }
 }
+output "ip {
+    value = aws_instance.instances
+}
