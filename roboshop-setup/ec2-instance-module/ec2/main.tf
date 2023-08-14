@@ -12,3 +12,7 @@ resource "aws_instance" "instance" {
     Name = var.component
   }
 }
+
+output "ec2-output" {
+  value = aws_instance.instance
+}

@@ -11,3 +11,7 @@ module "ec2" {
 module "sg" {
   source = "./sg"
   }
+
+output "ec2-out" {
+  value = module.ec2.ec2-output
+}
