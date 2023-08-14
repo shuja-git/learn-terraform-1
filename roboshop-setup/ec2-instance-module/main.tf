@@ -8,7 +8,5 @@ module "ec2" {
 
 module "sg" {
   source = "./sg"
-}
-output "print_sg-id" {
-  value = module.sg.sg_id
+  sg_id = module.sg.sg_id
 }
