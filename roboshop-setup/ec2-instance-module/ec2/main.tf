@@ -13,6 +13,6 @@ resource "aws_instance" "instance" {
   }
 }
 
-output "ec2-output" {
+output "private_ip" {
   value = aws_instance.instance.private_ip
 }

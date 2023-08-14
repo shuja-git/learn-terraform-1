@@ -14,3 +14,4 @@ variable "ec2" {
 output "test"{
     value = lookup(var.ec2, "catalogue" )
 }
+
