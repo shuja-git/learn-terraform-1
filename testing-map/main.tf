@@ -12,5 +12,5 @@ variable "ec2" {
 }
 
 output "test"{
-    value = var.ec2
+    value = var.ec2["catalogue"]
 }
