@@ -14,5 +14,5 @@ resource "aws_instance" "instance" {
 }
 
 output "ec2-output" {
-  value = aws_instance.instance
+  value = aws_instance.instance.private_ip
 }
