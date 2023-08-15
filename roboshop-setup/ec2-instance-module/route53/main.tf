@@ -3,7 +3,7 @@ resource "aws_route53_record" "record" {
   name    = "${var.component}-dev.shujadevops.online"
   type    = "A"
   ttl     = 300
-  records = [aws_instance.instance.private_ip]
+  records = [var.private_ip]
 }
 
 
