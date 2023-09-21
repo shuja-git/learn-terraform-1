@@ -7,7 +7,7 @@ resource "aws_spot_instance_request" "node1" {
     Name = "prometheus-test-server"
   }
 }
-resource "aws_ec2_tag" "example" {
+resource "aws_ec2_tag" "node1_tag" {
   resource_id = aws_spot_instance_request.node1.spot_instance_id
   key         = "Name"
   value       = "prometheus-test-server"
@@ -22,7 +22,7 @@ resource "aws_spot_instance_request" "node2" {
     Name = "prometheus-test-node"
   }
 }
-resource "aws_ec2_tag" "example" {
+resource "aws_ec2_tag" "node2_tag" {
   resource_id = aws_spot_instance_request.node2.spot_instance_id
   key         = "Name"
   value       = "prometheus-test-node"
