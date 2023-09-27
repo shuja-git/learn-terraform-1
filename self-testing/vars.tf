@@ -1,0 +1,3 @@
+variable "monitor" {
+  default = "monitor"
+}
