@@ -1,3 +1,7 @@
 variable "monitor" {
-  default = "monitor"
+  default = {
+    monitor = true
+  }
+
+
 }
