@@ -12,3 +12,4 @@ resource "aws_ec2_tag" "node_tag" {
   key         = var.monitor
   value       = var.monitor ? "yes" : "no"
 }
+###### the above one i did not get, try later
